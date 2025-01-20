@@ -3,10 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 1 - Adicciones.</title>
+    <title>Les Addiccions - Pàgina Web</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Adicciones</h1>
-    <img src="imagenes/Buda.jpg" alt="Buda">
+    
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.png" alt="Logotip de Les Addiccions">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inici</a></li>
+                <li><a href="#about-us">Sobre Nosaltres</a></li>
+                <li><a href="#contact">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  
+    <section id="home" class="home">
+        <div class="content">
+            <h1>Les Addiccions</h1>
+            <p>Un vídeo i recursos sobre el problema de les addiccions a la tecnologia mòbil.</p>
+        </div>
+
+        <div class="video-container">
+            <h2>Vídeo sobre les Addiccions</h2>
+            <div class="video-wrapper">
+                <iframe width="100%" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <p>Fes clic a la imatge per veure el vídeo sobre les addiccions.</p>
+
+            
+            <video controls>
+                <source src="video/les-addiccions.mp4" type="video/mp4">
+                <source src="video/les-addiccions.webm" type="video/webm">
+                <source src="video/les-addiccions.ogv" type="video/ogg">
+                El teu navegador no suporta la visualització de vídeo.
+            </video>
+        </div>
+    </section>
+
+   
+    <section id="about-us" class="about-us">
+        <div class="content">
+            <h2>Sobre Nosaltres</h2>
+            <p>Som un equip dedicat a conscienciar sobre els riscos de les addiccions, especialment a les pantalles i als dispositius mòbils. Creiem que la tecnologia ha de ser una eina útil, no una addicció.</p>
+        </div>
+    </section>
+
+    
+    <section id="contact" class="contact">
+        <div class="content">
+            <h2>Contacte</h2>
+            <p>Si tens alguna pregunta o vols més informació, contacta'ns mitjançant el formulari següent:</p>
+
+            <form action="enviar_formulari.php" method="POST">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Missatge:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <p>O pots enviar-nos un correu a <a href="guiraomartindidac@fpllefia.com">guiraomartindidac@fpllefia.com</a></p>
+        </div>
+    </section>
+
+   
+    <footer>
+        <p>&copy; 2025 Les Addiccions. Tots els drets reservats.</p>
+    </footer>
+ 
 </body>
 </html>
